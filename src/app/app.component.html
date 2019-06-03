@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+
+<app-jumbotron title="Hello Myles"></app-jumbotron>
+
+<div class="row">
+  <div *ngFor="let card of cards" class="col">
+    <app-card
+      [title]="card.title"
+      [text]="card.text"
+      [buttonText]="card.buttonText"
+    ></app-card>
+  </div>
+</div>
+<app-collapse></app-collapse>
+<router-outlet></router-outlet>
